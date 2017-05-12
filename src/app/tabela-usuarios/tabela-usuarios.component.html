@@ -1,0 +1,21 @@
+<h3>
+  Tabela do Projeto formulário
+</h3>
+<table>
+  <tr>
+    <th>Matricula</th>
+    <th>Nome</th>
+    <th>e-mail</th>
+    <th>Telefone</th>
+    <th>Editar</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor='let usuario of usuarios'>
+    <td>{{usuario.matricula}}</td>
+    <td>{{usuario.nome}}</td>
+    <td>{{usuario.email}}</td>
+    <td>{{usuario.telefone}}</td>
+    <td><a href="#">Editar</a></td>
+    <td><a href="#">Remover</a></td>
+  </tr>
+</table>

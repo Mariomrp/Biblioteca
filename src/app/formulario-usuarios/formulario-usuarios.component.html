@@ -1,0 +1,22 @@
+<h2>
+  Formulario do Projeto Formulário!
+</h2>
+  <table>
+    <tr>
+      <th>Matricula: </th>
+      <th><input type="text" [(ngModel)]="usuario.matricula"></th>
+    </tr>
+    <tr>
+      <th>Nome: </th>
+      <th><input type="text" [(ngModel)]="usuario.nome"></th>
+    </tr>
+    <tr>
+      <th>e-Mail: </th>
+      <td><input type="text" [(ngModel)]="usuario.email"></td>
+    </tr>
+    <tr>
+      <th>Telefone: </th>
+      <td><input type="text" [(ngModel)]="usuario.telefone"></td>
+    </tr>
+  </table>
+  <p><input type="button" value="Cadastrar" (click)="adicionarUsuario()"/></p>
