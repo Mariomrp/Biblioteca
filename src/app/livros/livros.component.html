@@ -1,0 +1,24 @@
+<h3>
+  Tabela Livros
+</h3>
+<table>
+  <tr>
+    <th>ISBN</th>
+    <th>Título do Livro</th>
+    <th>Autor</th>
+    <th>Editora</th>
+    <th>Ano Publicação</th>
+    <th>Editar</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor='let livro of livros'>
+    <td>{{livro.isbn}}</td>
+    <td>{{livro.nome}}</td>
+    <td>{{livro.autor}}</td>
+    <td>{{livro.editora}}</td>
+    <td>{{livro.anopublicacao}}</td>
+    <td><a href="#">Editar</a></td>
+    <td><a href="#">Remover</a></td>
+  </tr>
+  <br><button routerLink="formulario" class="btn btn-primary">Botão Incluir</button>
+</table>

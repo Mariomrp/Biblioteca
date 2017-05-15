@@ -1,0 +1,18 @@
+<h3>
+  Tabela Autores
+</h3>
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>País de Origem</th>
+    <th>Editar</th>
+    <th>Remover</th>
+  </tr>
+  <tr *ngFor='let autor of autores'>
+    <td>{{autor.nome}}</td>
+    <td>{{autor.origem}}</td>
+    <td><a href="#">Editar</a></td>
+    <td><a href="#">Remover</a></td>
+  </tr>
+  <br><button routerLink="formulario" class="btn btn-primary">Botão Incluir</button>
+</table>

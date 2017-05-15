@@ -1,7 +1,7 @@
 <h2>
   Formulario do Projeto Formulário!
 </h2>
-  <table>
+  <!--<table>
     <tr>
       <th>Matricula: </th>
       <th><input type="text" [(ngModel)]="usuario.matricula"></th>
@@ -19,4 +19,33 @@
       <td><input type="text" [(ngModel)]="usuario.telefone"></td>
     </tr>
   </table>
-  <p><input type="button" value="Cadastrar" (click)="adicionarUsuario()"/></p>
+  <p><input type="button" value="Cadastrar" (click)="adicionarUsuario()"/></p>-->
+
+<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="Matricula" type="text" class="validate">
+          <label for="Matricula">Matricula</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="Nome" type="text" class="validate">
+          <label for="Nome">Nome</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input idplaceholder="Placeholder" id="telefone" type="text" class="validate">
+          <label for="password">Telefone</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
