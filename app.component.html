@@ -1,0 +1,41 @@
+<!--Cabeçalho Aqui-->
+<header>
+    <nav class="card-panel teal lighten-2">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img src="img/iconelivro.png" align="left" width="65px">
+                <h3>Projeto Biblioteca</h3>
+            </div>  
+        </div>
+    </nav>
+</header>
+<!--Cabeçalho Termina Aqui-->
+<body>
+<!--Container Começa Aqui-->
+    <div class="container">
+        <!--Menu Começa aqui-->
+        <div class="menu">
+            <p> Menu de Navegação</p><br>
+            <button routerLink="/usuarios" class="btn btn-primary">Clientes</button>
+            <button routerLink="/autor" class="btn btn-primary">Autores</button>
+            <button routerLink="/livros" class="btn btn-primary">Livros</button><br><br>
+            <button routerLink="/retirada" class="btn btn-primary">Retiradas</button>
+            <button routerLink="/relatorios" class="btn btn-primary">Relatórios</button>
+        </div>
+        <!--Menu Terminal aqui-->
+        <!--Section começa Aqui-->
+        <div class="section">
+            <router-outlet></router-outlet>
+        </div>
+        <!--Section Termina Aqui-->
+    </div>
+    <!--Container Termina Aqui-->
+</body>
+<!--Rodapé Aqui-->
+<footer>
+    <img src="img/livros.png"  align="left" width="200px">
+  Desenvolvido por Mário Mateus Prederigo.<br>
+  Versão 0.9. APS 1. Angular. 17/05/2017.<br>
+</footer>
+
+<!--Fim do Rodapé Aqui-->
