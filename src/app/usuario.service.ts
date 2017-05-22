@@ -19,11 +19,15 @@ addUsuario(usuario:Usuario) {
   this.usuarios.push(usuario);
 }
 
-removeUsuario(usuario:Usuario) {
+removerUsuario(indice:number){
+    this.usuarios.splice(indice,1);    
+  }
 
-}
+getUsuario(indice:number){
+    return this.usuarios[indice];
+  }
 
-alteraUsuario(usuario:Usuario) {
-  
-}
+atualizaUsuario(indice:number, usuario:Usuario){
+    this.usuarios[indice] = usuario;
+  }
 }

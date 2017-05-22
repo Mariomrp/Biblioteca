@@ -19,11 +19,15 @@ addAutor(autor:Autor) {
   this.autores.push(autor);
 }
 
-removeAutor(autor:Autor) {
-
+removerAutor(indice:number) {
+  this.autores.splice(indice,1);
 }
 
-alteraAutor(autor:Autor) {
-  
-}
+getAutor(indice:number){
+    return this.autores[indice];
+  }
+
+atualizaAutor(indice:number, autor:Autor){
+    this.autores[indice] = autor;
+  }
 }

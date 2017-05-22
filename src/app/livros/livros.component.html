@@ -1,6 +1,11 @@
 <h3>
-  Tabela Livros
+  Tabela Livros!
 </h3>
+<script>
+    jQuery(function($){
+      $("#isbn").mask("99-999-9999-9");
+    });
+  </script>
 <table>
   <tr>
     <th>ISBN</th>
@@ -11,14 +16,14 @@
     <th>Editar</th>
     <th>Remover</th>
   </tr>
-  <tr *ngFor='let livro of livros'>
+  <tr *ngFor='let livro of livros;let i=index'>
     <td>{{livro.isbn}}</td>
     <td>{{livro.nome}}</td>
     <td>{{livro.autor}}</td>
     <td>{{livro.editora}}</td>
     <td>{{livro.anopublicacao}}</td>
-    <td><a href="#">Editar</a></td>
-    <td><a href="#">Remover</a></td>
+    <td><a [routerLink]="['/edicaolivro',i]">Editar</a></td>
+    <td><a routerLink="/lista" (click)="removerLivro(i)">Remover</a></td>
   </tr>
-  <br><button routerLink="formulario" class="btn btn-primary">Botão Incluir</button>
 </table>
+  <br><button routerLink="/novolivro" class="btn btn-primary">Novo Livro</button>

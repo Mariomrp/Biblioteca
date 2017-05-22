@@ -13,6 +13,10 @@ import { LivrosComponent } from './livros/livros.component';
 import { AutorComponent } from './autor/autor.component';
 import { AutorService } from "app/autor.service";
 import { LivroService } from "app/livro.service";
+import { FormularioAutorComponent } from './formulario-autor/formulario-autor.component';
+import { FormularioLivroComponent } from './formulario-livro/formulario-livro.component';
+import { FormularioRetiradaComponent } from './formulario-retirada/formulario-retirada.component';
+import { RetiradaService } from "app/retirada.service";
 
 @NgModule({
   declarations: [
@@ -20,7 +24,10 @@ import { LivroService } from "app/livro.service";
     TabelaUsuariosComponent,
     FormularioUsuariosComponent,
     LivrosComponent,
-    AutorComponent
+    AutorComponent,
+    FormularioAutorComponent,
+    FormularioLivroComponent,
+    FormularioRetiradaComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,8 @@ import { LivroService } from "app/livro.service";
   providers: [
     UsuarioService,
     AutorService,
-    LivroService
+    LivroService,
+    RetiradaService
     ],
   bootstrap: [AppComponent]
 })

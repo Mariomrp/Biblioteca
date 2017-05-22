@@ -16,4 +16,7 @@ export class LivrosComponent implements OnInit {
     this.livros = this.servico.getListaLivros()
   }
 
+  removerLivro(indice: number){
+    this.servico.removerLivro(indice);
+  }
 }

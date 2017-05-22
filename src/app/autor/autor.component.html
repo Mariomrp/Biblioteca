@@ -1,18 +1,19 @@
 <h3>
-  Tabela Autores
+  Tabela Autores!
 </h3>
-<table>
+<table class="striped">
   <tr>
     <th>Nome</th>
     <th>País de Origem</th>
     <th>Editar</th>
     <th>Remover</th>
   </tr>
-  <tr *ngFor='let autor of autores'>
+  <tr *ngFor='let autor of autores;let i=index'>
     <td>{{autor.nome}}</td>
     <td>{{autor.origem}}</td>
-    <td><a href="#">Editar</a></td>
-    <td><a href="#">Remover</a></td>
+    <td><a [routerLink]="['/edicaoautor',i]">Editar</a></td>
+    <td><a routerLink="/lista" (click)="removerAutor(i)">Remover</a></td>
   </tr>
-  <br><button routerLink="formulario" class="btn btn-primary">Botão Incluir</button>
 </table>
+  <br><button routerLink="/novoautor" class="btn btn-primary">Novo Autor</button>
+

@@ -16,4 +16,8 @@ export class TabelaUsuariosComponent implements OnInit {
     this.usuarios = this.servico.getListaUsuarios()
   }
 
+  removerUsuario(indice: number){
+    this.servico.removerUsuario(indice);
+  }
+
 }

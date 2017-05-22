@@ -14,3 +14,14 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+button {
+    text-align: center;
+	width: 165px;
+	height: 40px;
+	border-radius:10px;
+}
+
+input {
+    border-radius: 10px;;
+}

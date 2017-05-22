@@ -10,10 +10,13 @@ import { AutorService } from "app/autor.service";
 export class AutorComponent implements OnInit {
   autores: Autor[];
 
-  constructor(private servico: AutorService) { }
+constructor(private servico: AutorService) { }
 
-  ngOnInit() {
-    this.autores = this.servico.getListaAutores()
+ngOnInit() {
+  this.autores = this.servico.getListaAutores()
+}
+
+removerAutor(indice: number){
+    this.servico.removerAutor(indice);
   }
-
 }

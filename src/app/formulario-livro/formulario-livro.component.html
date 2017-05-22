@@ -1,0 +1,33 @@
+<h3>
+  Formulário Livro!
+</h3>
+  <table>
+    <tr>
+      <th>ISBN: </th>
+      <th><input type="text" id="isbn" [(ngModel)]="livro.isbn"></th>
+    </tr>
+    <tr>
+      <th>Título do Livro: </th>
+      <th><input type="text" [(ngModel)]="livro.nome"></th>
+    </tr>
+    <tr>
+      <th>Autor: </th>
+      <td><input type="text" [(ngModel)]="livro.autor"></td>
+    </tr>
+    <tr>
+      <th>Editora: </th>
+      <td><input type="text" [(ngModel)]="livro.editora"></td>
+    </tr>
+    <tr>
+      <th>Ano Publicação: </th>
+      <td><input type="text" [(ngModel)]="livro.anopublicacao"></td>
+    </tr>
+  </table>
+  <script>
+    jQuery(function($){
+      $("#campoisbn").mask("99-999-9999-9");
+    });
+  </script>
+  <input type="button" class="btn btn-primary" value="Salvar" (click)="salvar()"/>
+  <input type="button" class="btn btn-primary" value="Cancelar" (click)="cancelar()"/>
+  

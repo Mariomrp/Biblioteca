@@ -19,11 +19,15 @@ addLivro(livro:Livro) {
   this.livros.push(livro);
 }
 
-removeLivro(livro:Livro) {
+removerLivro(indice:number){
+    this.livros.splice(indice,1);    
+  }
 
-}
+getLivro(indice:number){
+    return this.livros[indice];
+  }
 
-alteraLivro(livro:Livro) {
-  
-}
+atualizaLivro(indice:number, livro:Livro){
+    this.livros[indice] = livro;
+  }
 }
