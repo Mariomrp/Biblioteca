@@ -13,21 +13,37 @@ import { FormularioAutorComponent } from './formulario-autor/formulario-autor.co
 
 import { FormularioRetiradaComponent } from "app/formulario-retirada/formulario-retirada.component";
 
+import { DropdownComponent } from "app/dropdown/dropdown.component";
+
 const APP_ROUTES: Routes = [
     //path usuarios
     {path: 'usuarios', component: TabelaUsuariosComponent },
-    {path: 'novousuario', component:FormularioUsuariosComponent },
-    {path: 'edicaousuario/:ind', component:FormularioUsuariosComponent },
+    {path: 'novousuario', component: FormularioUsuariosComponent },
+    {path: 'edicaousuario/:ind', component: FormularioUsuariosComponent },
     //path livros
     {path: 'livros', component: LivrosComponent },
-    {path: 'novolivro', component:FormularioLivroComponent },
-    {path: 'edicaolivro/:ind', component:FormularioLivroComponent },
+    {path: 'novolivro', component: FormularioLivroComponent },
+    {path: 'edicaolivro/:ind', component: FormularioLivroComponent },
     //path autor
     {path: 'autor', component: AutorComponent },
     {path: 'novoautor', component: FormularioAutorComponent },
-    {path: 'edicaoautor/:ind', component:FormularioAutorComponent },
+    {path: 'edicaoautor/:ind', component: FormularioAutorComponent },
     //path retirada
     { path: 'retirada', component: FormularioRetiradaComponent },
+    //path teste dropdown
+   // { path: 'dropdown', component: DropdownComponent },
 ];
 
 export const rotas: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
+
+// const APP_ROUTES: Routes = [
+//     {
+//         path: 'usuarios', component: TabelaUsuariosComponent,
+//         children: [
+//             {
+//                 path: 'novousuario', component: FormularioUsuariosComponent,
+//                 path: 'edicaousuario/:ind', component: FormularioUsuariosComponent,
+//             }
+//         ]
+//     }
+// ]

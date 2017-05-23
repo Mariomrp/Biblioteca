@@ -1,0 +1,30 @@
+<p>
+  dropdown works!
+</p>
+<table class="striped">
+  <tr>
+    <th>Nome</th>
+  </tr>
+  <tr>
+    <td>
+      <mz-dropdown
+        [id]="'dropdown'"
+        [align]="'left'"
+        [belowOrign]="false"
+        [constrainWidth]="true"
+        [dropdownButtonId]="'btn-dropdown'"
+        [gutter]="true"
+        [hover]="true"
+        [inDuration]="300"
+        [outDuration]="300"
+        [stopPropagation]="true"
+      >
+      <mz-dropdown-item><a href="#!">One</a></mz-dropdown-item>
+      <mz-dropdown-item><a href="#!">Two</a></mz-dropdown-item>
+      <mz-dropdown-divider></mz-dropdown-divider>
+      <mz-dropdown-item><a href="#!">Three</a></mz-dropdown-item>
+    </collapsible>
+    </td>
+  </tr>
+</table>
+  <br><a mz-button id="btn-dropdown" href="#">Dropdown</a>

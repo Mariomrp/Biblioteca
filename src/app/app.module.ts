@@ -33,7 +33,8 @@ import { RetiradaService } from "app/retirada.service";
     BrowserModule,
     FormsModule,
     HttpModule,
-    rotas
+    rotas,
+    MaterializeModule.forRoot()
   ],
   providers: [
     UsuarioService,
