@@ -1,0 +1,23 @@
+<h3>
+  Retirada de Livro!
+</h3>
+<table>
+  <tr>
+    <th>Nome Cliente</th>
+    <th>Título do Livro</th>
+    <th>Data Retirada</th>
+    <th>Data Devolução</th>
+  </tr>
+  <tr>
+    <td><button routerLink="/usuarios" class="btn btn-flat wavws-effect wavws-light" _ngcontent-c14="" mz-button="">Cliente</button></td>
+    <td><button routerLink="/livros" class="btn btn-flat wavws-effect wavws-light" _ngcontent-c14="" mz-button="">Livro</button></td>
+    <td>
+      <input type="date" id="retirada" class="datepicker">
+    </td>
+    <td>
+      <input type="date" id="entrega" class="datepicker">
+    </td>
+  </tr>
+</table>
+<br><input type="button" class="btn btn-primary" value="Confirma Retirada" (click)="salvar()" />
+    <input type="button" class="btn btn-primary" value="Cancela Retirada" (click)="cancelar()" />
