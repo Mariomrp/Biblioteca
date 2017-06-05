@@ -15,10 +15,17 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-button {
-    text-align: center;
-	width: 165px;
+.btn, .btn-large {
+	width: 250px;
 	height: 40px;
+	font-size:1.3rem;
+    text-decoration: none;
+    color: black;
+    background-color: #26a69a;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
 	border-radius:10px;
 }
 

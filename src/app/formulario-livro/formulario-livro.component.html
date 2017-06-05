@@ -4,30 +4,25 @@
   <table>
     <tr>
       <th>ISBN: </th>
-      <th><input type="text" id="isbn" [(ngModel)]="livro.isbn"></th>
+      <th><input placeholder="ISBN" type="text" id="isbn" [(ngModel)]="livro.isbn"></th>
     </tr>
     <tr>
       <th>Título do Livro: </th>
-      <th><input type="text" [(ngModel)]="livro.nome"></th>
+      <th><input placeholder="Título" type="text" [(ngModel)]="livro.nome"></th>
     </tr>
     <tr>
       <th>Autor: </th>
-      <td><input type="text" [(ngModel)]="livro.autor"></td>
+      <td><input placeholder="Autor" type="text" [(ngModel)]="livro.autor"></td>
     </tr>
     <tr>
       <th>Editora: </th>
-      <td><input type="text" [(ngModel)]="livro.editora"></td>
+      <td><input placeholder="Editora" type="text" [(ngModel)]="livro.editora"></td>
     </tr>
     <tr>
       <th>Ano Publicação: </th>
-      <td><input type="text" [(ngModel)]="livro.anopublicacao"></td>
+      <td><input placeholder="Ano da Publicação" type="text" [(ngModel)]="livro.anopublicacao"></td>
     </tr>
   </table>
-  <script>
-    jQuery(function($){
-      $("#campoisbn").mask("99-999-9999-9");
-    });
-  </script>
-  <input type="button" class="btn btn-primary" value="Salvar" (click)="salvar()"/>
-  <input type="button" class="btn btn-primary" value="Cancelar" (click)="cancelar()"/>
-  
+  <br>
+  <a class="btn waves-effect waves-light col s12" (click)="salvar()">salvar</a>
+  <a class="btn waves-effect waves-light col s12" (click)="cancelar()">cancelar</a>

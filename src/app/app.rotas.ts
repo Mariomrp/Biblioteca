@@ -13,8 +13,6 @@ import { FormularioAutorComponent } from './formulario-autor/formulario-autor.co
 
 import { FormularioRetiradaComponent } from "app/formulario-retirada/formulario-retirada.component";
 
-import { DropdownComponent } from "app/dropdown/dropdown.component";
-
 const APP_ROUTES: Routes = [
     //path usuarios
     {path: 'usuarios', component: TabelaUsuariosComponent },
@@ -30,12 +28,12 @@ const APP_ROUTES: Routes = [
     {path: 'edicaoautor/:ind', component: FormularioAutorComponent },
     //path retirada
     { path: 'retirada', component: FormularioRetiradaComponent },
-    //path teste dropdown
-   // { path: 'dropdown', component: DropdownComponent },
+    
 ];
 
 export const rotas: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
 
+// exemplo de rotas usando children
 // const APP_ROUTES: Routes = [
 //     {
 //         path: 'usuarios', component: TabelaUsuariosComponent,

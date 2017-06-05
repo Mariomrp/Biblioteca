@@ -1,22 +1,22 @@
 <h3>
   Formulário Cliente!
 </h3>
-  <table>
+  <table class="striped">
     <tr>
       <th>Matricula: </th>
-      <th><input type="text" [(ngModel)]="usuario.matricula"></th>
+      <th><input placeholder="Matricula" type="text" [(ngModel)]="usuario.matricula"></th>
     </tr>
     <tr>
       <th>Nome: </th>
-      <th><input type="text" [(ngModel)]="usuario.nome"></th>
+      <th><input placeholder="Nome" type="text" [(ngModel)]="usuario.nome"></th>
     </tr>
     <tr>
       <th>e-Mail: </th>
-      <td><input type="text" [(ngModel)]="usuario.email"></td>
+      <td><input placeholder="e-mail" id="email" value="valid-example@domain.com" class="validate" type="email" [(ngModel)]="usuario.email"></td>
     </tr>
     <tr>
       <th>Telefone: </th>
-      <td><input type="text" [(ngModel)]="usuario.telefone"></td>
+      <td><input placeholder="Telefone" type="text" [(ngModel)]="usuario.telefone"></td>
     </tr>
   </table>
   <input type="button" class="btn btn-primary" value="Salvar" (click)="salvar()"/>

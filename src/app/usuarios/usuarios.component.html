@@ -1,5 +1,5 @@
 <h3>
-  Tabela Clientes!
+  Tabela Clientes
 </h3>
 <table class="highlight">
   <tr>
@@ -15,9 +15,9 @@
     <td>{{usuario.nome}}</td>
     <td>{{usuario.email}}</td>
     <td>{{usuario.telefone}}</td>
-    <td><a [routerLink]="['/edicaousuario',i]">Editar</a></td>
-    <td><a routerLink="/lista" (click)="removerUsuario(i)">Remover</a></td>
+    <td><a href="#">Editar</a></td>
+    <td><a href="#">Remover</a></td>
   </tr>
 </table>
 <br>
-<a routerLink="/novousuario" class="btn waves-effect waves-light col s12">Novo Usuário</a>
+<a routerLink="/formulario" class="btn waves-effect waves-light col s12">Botão Incluir</a>

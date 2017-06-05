@@ -1,3 +1,4 @@
+
 <h3>
   Retirada de Livro!
 </h3>
@@ -9,8 +10,26 @@
     <th>Data Entrega</th>
   </tr>
   <tr>
-    <td>select aqui</td>
-    <td>select aqui</td>
+    <td>
+      <a class='dropdown-button btn' href='' data-activates='dropdown1'>Cliente</a>
+      <ul id='dropdown1' class='dropdown-content'>
+			<li><a href="/usuarios">Autor1</a></li>
+			<li><a href="/autor">Autor2</a></li>
+			<li><a href="/livros">Autor3</a></li>
+			<li><a href="/retirada"><i class="material-icons">view_module</i>Retiradas</a></li>
+			<li><a href="/"><i class="material-icons">cloud</i>Relatórios</a></li>
+		</ul>
+    </td>
+    <td>
+      <a class='dropdown-button btn' href='' data-activates='dropdown2'>Livro</a>
+      <ul id='dropdown2' class='dropdown-content'>
+			<li><a href="/usuarios">Livro1</a></li>
+			<li><a href="/autor">Livro2</a></li>
+			<li><a href="/livros">Livro3</a></li>
+			<li><a href="/retirada"><i class="material-icons">view_module</i>Retiradas</a></li>
+			<li><a href="/"><i class="material-icons">cloud</i>Relatórios</a></li>
+		</ul>
+    </td>
     <td>
       <input type="date" class="datepicker">    
     </td>
@@ -19,5 +38,6 @@
     </td>
   </tr>
 </table>
-  <br><input type="button" class="btn btn-primary" value="Confirma Retirada" (click)="salvar()"/>
-      <input type="button" class="btn btn-primary" value="Cancela Retirada" (click)="cancelar()"/>
+<br>
+<a class="btn waves-effect waves-light col s12" (click)="salvar()">Confirma Retirada</a>
+<a class="btn waves-effect waves-light col s12" (click)="cancelar()">Cancela Retirada</a>
