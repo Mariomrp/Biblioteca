@@ -1,16 +1,21 @@
-<h3>
+<h4>
   Formulário Autor!
-</h3>
-  <table>
+</h4>
+
+<table class="responsive-table">
+  <thead>
     <tr>
-      <th>Nome:</th>
-      <th><input placeholder="Nome do Autor" type="text" [(ngModel)]="autor.nome"></th>
+      <th>Nome</th>
+      <th>País de Origem</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
-      <th>País de Origem:</th>
+      <td><input placeholder="Nome do Autor" type="text" [(ngModel)]="autor.nome"></td>
       <td><input placeholder="País de Origem" type="text" [(ngModel)]="autor.origem"></td>
     </tr>
-  </table>
-  <br>
-  <a class="btn waves-effect waves-light col s12" (click)="salvar()">salvar</a>
-  <a class="btn waves-effect waves-light col s12" (click)="cancelar()">cancelar</a>
+  </tbody>
+</table>
+<br>
+<a class="btn waves-effect waves-light" (click)="salvar()">salvar</a>
+<a class="btn waves-effect waves-light" (click)="cancelar()">cancelar</a>

@@ -1,23 +1,28 @@
-<h3>
+<h4>
   Tabela Clientes!
-</h3>
-<table class="highlight">
-  <tr>
-    <th>Matricula</th>
-    <th>Nome</th>
-    <th>e-mail</th>
-    <th>Telefone</th>
-    <th>Editar</th>
-    <th>Remover</th>
-  </tr>
-  <tr *ngFor='let usuario of usuarios;let i=index'>
-    <td>{{usuario.matricula}}</td>
-    <td>{{usuario.nome}}</td>
-    <td>{{usuario.email}}</td>
-    <td>{{usuario.telefone}}</td>
-    <td><a [routerLink]="['/edicaousuario',i]">Editar</a></td>
-    <td><a routerLink="/lista" (click)="removerUsuario(i)">Remover</a></td>
-  </tr>
+</h4>
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th>Matricula</th>
+      <th>Nome</th>
+      <th>e-mail</th>
+      <th>Telefone</th>
+      <th>Editar</th>
+      <th>Remover</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let usuario of usuarios;let i=index'>
+      <td>{{usuario.matricula}}</td>
+      <td>{{usuario.nome}}</td>
+      <td>{{usuario.email}}</td>
+      <td>{{usuario.telefone}}</td>
+      <td><a [routerLink]="['/edicaousuario',i]">Editar</a></td>
+      <td><a routerLink="/lista" (click)="removerUsuario(i)">Remover</a></td>
+    </tr>
+  </tbody>
 </table>
 <br>
-<a routerLink="/novousuario" class="btn waves-effect waves-light col s12">Novo Usuário</a>
+<a routerLink="/novousuario" class="btn waves-effect">Novo Usuário</a>

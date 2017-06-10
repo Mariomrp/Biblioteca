@@ -11,9 +11,19 @@ import { FormularioLivroComponent } from './formulario-livro/formulario-livro.co
 import { AutorComponent } from './autor/autor.component';
 import { FormularioAutorComponent } from './formulario-autor/formulario-autor.component';
 
-import { FormularioRetiradaComponent } from "app/formulario-retirada/formulario-retirada.component";
+// import { FormularioRetiradaComponent } from "app/formulario-retirada/formulario-retirada.component";
 
 const APP_ROUTES: Routes = [
+    // // exemplo de rotas usando children
+    //     {
+    //      path: 'usuarios', component: TabelaUsuariosComponent,
+    //      children: [
+    //          {  path: 'novo', component: FormularioUsuariosComponent },
+    //          {  path: 'edicao/:ind', component: FormularioUsuariosComponent }
+    //      ]
+    //  },
+   ///////////
+   
     //path usuarios
     {path: 'usuarios', component: TabelaUsuariosComponent },
     {path: 'novousuario', component: FormularioUsuariosComponent },
@@ -27,7 +37,7 @@ const APP_ROUTES: Routes = [
     {path: 'novoautor', component: FormularioAutorComponent },
     {path: 'edicaoautor/:ind', component: FormularioAutorComponent },
     //path retirada
-    { path: 'retirada', component: FormularioRetiradaComponent },
+    // { path: 'retirada', component: FormularioRetiradaComponent },
     
 ];
 
@@ -39,8 +49,8 @@ export const rotas: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
 //         path: 'usuarios', component: TabelaUsuariosComponent,
 //         children: [
 //             {
-//                 path: 'novousuario', component: FormularioUsuariosComponent,
-//                 path: 'edicaousuario/:ind', component: FormularioUsuariosComponent,
+//                 path: 'novo', component: FormularioUsuariosComponent,
+//                 path: 'edicao/:ind', component: FormularioUsuariosComponent,
 //             }
 //         ]
 //     }

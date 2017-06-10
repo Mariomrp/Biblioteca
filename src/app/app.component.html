@@ -1,5 +1,4 @@
-<!--Cabeçalho Aqui-->
-<header>
+<!--<header>
     <nav class="card-panel blue darken-1">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -8,45 +7,66 @@
             </div>
         </div>
     </nav>
-</header>
-<!--Cabeçalho Termina Aqui-->
+</header>-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="menu">
+      <img src="img/iconelivro.png" align="left" width="65px">
+      <h3>Projeto Biblioteca</h3>
 
-<body>
-    <!--Container Começa Aqui-->
-    <div class="container">
-        <!--Menu Começa aqui-->
-        <div class="menu">
-            <p> Menu de Navegação</p><br>
-            <a routerLink="/usuarios" class="btn waves-effect waves-light col s12">Clientes</a><br><br>
-            <a routerLink="/autor" class="btn waves-effect waves-light col s12">Autores</a><br><br>
-            <a routerLink="/livros" class="btn waves-effect waves-light col s12">Livros</a><br><br>
-            <a routerLink="/retirada" class="btn waves-effect waves-light col s12">Retiradas</a><br><br>
-            <a routerLink="/" class="btn waves-effect waves-light col s12">Relatórios</a><br><br>
-            <!-- Dropdown Trigger -->
-            <!--<a class='dropdown-button btn' href='#' data-activates='dropdown1'>Teste Dropdown</a>-->
-
-            <!-- Dropdown Structure -->
-            <!--<ul id='dropdown1' class='dropdown-content'>
-                <li><a href="/usuarios">Usuarios</a></li>
-                <li><a href="/autor">Autores</a></li>
-                <li><a href="/livros">Livros</a></li>
-                <li><a href="/retirada"><i class="material-icons">view_module</i>Retiradas</a></li>
-                <li><a href="/"><i class="material-icons">cloud</i>Relatórios</a></li>
-            </ul>-->
-        </div>
-        <!--Menu Terminal aqui-->
-        <!--Section começa Aqui-->
-        <div class="section">
-            <router-outlet></router-outlet>
-        </div>
-        <!--Section Termina Aqui-->
     </div>
-    <!--Container Termina Aqui-->
-</body>
-<!--Rodapé Aqui-->
-<footer>
-    <img src="img/livros.png" align="left" width="200px"> Desenvolvido por Mário Mateus Prederigo.<br> Versão 1.0. APS 1.
-    Angular. 03/06/2017.<br>
-</footer>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <a routerLink="/usuarios" class="btn waves-effect waves-light">Clientes</a><br><br>
+      <a routerLink="/autor" class="btn waves-effect waves-light">Autores</a><br><br>
+      <a routerLink="/livros" class="btn waves-effect waves-light">Livros</a><br><br>
+      <a routerLink="/retirada" class="btn waves-effect waves-light">Retiradas</a><br><br>
+      <a routerLink="/" class="btn waves-effect waves-light">Relatórios</a><br><br>
+    </div>
+    <div class="col-sm-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 
-<!--Fim do Rodapé Aqui-->
+  <footer class="page-footer">
+    <img src="img/indice.jpg" align="left" width="200px">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Desenvolvido por Mário Mateus Prederigo.</h5>
+          <p class="grey-text text-lighten-4">Versão 2.0. APS 1. Angular. 09/06/2017.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2017 Copyright Liberado
+        <!--<a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+      </div>
+    </div>
+  </footer>
+
+
+  <!--<div class="row">
+    <footer>
+      <img src="img/livros.png" align="left" width="200px"> Desenvolvido por Mário Mateus Prederigo.<br> Versão 2.0. APS
+      1.Angular. 09/06/2017.<br>
+    </footer>
+  </div>-->
+
+</div>
+
+<!--<div class="btn-group" dropdown>
+  <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
+    teste <span class="caret"></span>
+  </button>
+  <ul *dropdownMenu class="dropdown-menu" role="menu">
+    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+    </li>
+  </ul>
+</div>-->

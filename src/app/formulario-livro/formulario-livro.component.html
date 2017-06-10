@@ -1,28 +1,25 @@
-<h3>
+<h4>
   Formulário Livro!
-</h3>
-  <table>
-    <tr>
-      <th>ISBN: </th>
-      <th><input placeholder="ISBN" type="text" id="isbn" [(ngModel)]="livro.isbn"></th>
+</h4>
+
+  <table class="responsive-table">
+    <thead>
+      <tr>
+      <th>ISBN</th>
+      <th>Título do Livro</th>
+      <th>Autor</th>
+      <th>Editora</th>
+      <th>Ano Publicação</th>
     </tr>
-    <tr>
-      <th>Título do Livro: </th>
-      <th><input placeholder="Título" type="text" [(ngModel)]="livro.nome"></th>
-    </tr>
-    <tr>
-      <th>Autor: </th>
-      <td><input placeholder="Autor" type="text" [(ngModel)]="livro.autor"></td>
-    </tr>
-    <tr>
-      <th>Editora: </th>
-      <td><input placeholder="Editora" type="text" [(ngModel)]="livro.editora"></td>
-    </tr>
-    <tr>
-      <th>Ano Publicação: </th>
-      <td><input placeholder="Ano da Publicação" type="text" [(ngModel)]="livro.anopublicacao"></td>
-    </tr>
+    </thead>
+    <tbody>
+      <td><input placeholder="ISBN" type="text" id="isbn" [(ngModel)]="livro.isbn"></td>
+      <td><input placeholder="Título" type="text" id="nome" [(ngModel)]="livro.nome"></td>
+      <td><input placeholder="Autor" type="text" id="autor" [(ngModel)]="livro.autor"></td>
+      <td><input placeholder="Editora" type="text" id="editora" [(ngModel)]="livro.editora"></td>
+      <td><input placeholder="Ano da Publicação" type="number" id="anopublicacao" [(ngModel)]="livro.anopublicacao"></td>
+    </tbody>
   </table>
   <br>
-  <a class="btn waves-effect waves-light col s12" (click)="salvar()">salvar</a>
-  <a class="btn waves-effect waves-light col s12" (click)="cancelar()">cancelar</a>
+  <a class="btn waves-effect waves-light" (click)="salvar()">salvar</a>
+  <a class="btn waves-effect waves-light" (click)="cancelar()">cancelar</a>

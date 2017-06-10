@@ -1,19 +1,24 @@
-<h3>
+<h4>
   Tabela Autores!
-</h3>
-<table class="striped">
-  <tr>
-    <th>Nome</th>
-    <th>País de Origem</th>
-    <th>Editar</th>
-    <th>Remover</th>
-  </tr>
-  <tr *ngFor='let autor of autores;let i=index'>
-    <td>{{autor.nome}}</td>
-    <td>{{autor.origem}}</td>
-    <td><a [routerLink]="['/edicaoautor',i]">Editar</a></td>
-    <td><a routerLink="/lista" (click)="removerAutor(i)">Remover</a></td>
-  </tr>
+</h4>
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>País de Origem</th>
+      <th>Editar</th>
+      <th>Remover</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let autor of autores;let i=index'>
+      <td>{{autor.nome}}</td>
+      <td>{{autor.origem}}</td>
+      <td><a [routerLink]="['/edicaoautor',i]">Editar</a></td>
+      <td><a routerLink="/lista" (click)="removerAutor(i)">Remover</a></td>
+    </tr>
+  </tbody>
 </table>
 <br>
-<a routerLink="/novoautor" class="btn waves-effect waves-light col s12">Novo Autor</a>
+<a routerLink="/novoautor" class="btn waves-effect waves-light">Novo Autor</a>

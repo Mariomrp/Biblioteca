@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { MaterializeModule } from 'angular2-materialize';
+// import { MaterializeModule } from 'angular2-materialize';
 import { TabelaUsuariosComponent } from './tabela-usuarios/tabela-usuarios.component';
 import { FormularioUsuariosComponent } from './formulario-usuarios/formulario-usuarios.component';
 import { UsuarioService } from './usuario.service';
@@ -15,8 +16,8 @@ import { AutorService } from "app/autor.service";
 import { LivroService } from "app/livro.service";
 import { FormularioAutorComponent } from './formulario-autor/formulario-autor.component';
 import { FormularioLivroComponent } from './formulario-livro/formulario-livro.component';
-import { FormularioRetiradaComponent } from './formulario-retirada/formulario-retirada.component';
-import { RetiradaService } from "app/retirada.service";
+// import { FormularioRetiradaComponent } from './formulario-retirada/formulario-retirada.component';
+// import { RetiradaService } from "app/retirada.service";
 
 @NgModule({
   declarations: [
@@ -27,21 +28,22 @@ import { RetiradaService } from "app/retirada.service";
     AutorComponent,
     FormularioAutorComponent,
     FormularioLivroComponent,
-    FormularioRetiradaComponent
+    // FormularioRetiradaComponent
   ],
   imports: [
     BrowserModule,
+    BsDropdownModule.forRoot(),
     FormsModule,
     HttpModule,
     rotas,
-    MaterializeModule.forRoot()
+    // MaterializeModule.forRoot()
   ],
   providers: [
     UsuarioService,
     AutorService,
     LivroService,
-    RetiradaService
-    ],
+    // RetiradaService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
