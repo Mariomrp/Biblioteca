@@ -15,7 +15,7 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-.btn, .btn-large {
+.btn {
 	width: 250px;
 	height: 40px;
 	font-size:1.3rem;

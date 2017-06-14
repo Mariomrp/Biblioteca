@@ -1,0 +1,43 @@
+
+<h3>
+  Retirada de Livro!
+</h3>
+<table>
+  <tr>
+    <th>Nome Cliente</th>
+    <th>Título do Livro</th>
+    <th>Data Retirada</th>
+    <th>Data Entrega</th>
+  </tr>
+  <tr>
+    <td>
+      <a class='dropdown-button btn-flat' href='' data-activates='dropdown3'>Cliente</a>
+      <ul id='dropdown3' class='dropdown-content'>
+			<li><a href="/usuarios">Mário Quintana</a></li>
+			<li><a href="/autor">Moacyr Scliar</a></li>
+			<li><a href="/livros">Lya Luft</a></li>
+			<!--<li><a href="/retirada"><i class="material-icons">view_module</i>Retiradas</a></li>
+			<li><a href="/"><i class="material-icons">cloud</i>Relatórios</a></li>-->
+		</ul>
+    </td>
+    <td>
+      <a class='dropdown-button btn-flat' href='/livros' data-activates='dropdown2'>Livro</a>
+      <ul id='dropdown2' class='dropdown-content'>
+			<li><a href="/usuarios">Livro1</a></li>
+			<li><a href="/autor">Livro2</a></li>
+			<li><a href="/livros">Livro3</a></li>
+			<!--<li><a href="/retirada"><i class="material-icons">view_module</i>Retiradas</a></li>
+			<li><a href="/"><i class="material-icons">cloud</i>Relatórios</a></li>-->
+		</ul>
+    </td>
+    <td>
+      <input type="date" class="datepicker">    
+    </td>
+    <td>
+      <input type="date" class="datepicker">
+    </td>
+  </tr>
+</table>
+<br>
+<a class="btn waves-effect waves-light" (click)="salvar()">Confirma Retirada</a>
+<a class="btn waves-effect waves-light" (click)="cancelar()">Cancela Retirada</a>

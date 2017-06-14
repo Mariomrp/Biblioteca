@@ -16,8 +16,8 @@ import { AutorService } from "app/autor.service";
 import { LivroService } from "app/livro.service";
 import { FormularioAutorComponent } from './formulario-autor/formulario-autor.component';
 import { FormularioLivroComponent } from './formulario-livro/formulario-livro.component';
-// import { FormularioRetiradaComponent } from './formulario-retirada/formulario-retirada.component';
-// import { RetiradaService } from "app/retirada.service";
+import { FormularioRetiradaComponent } from './formulario-retirada/formulario-retirada.component';
+import { RetiradaService } from "app/retirada.service";
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { FormularioLivroComponent } from './formulario-livro/formulario-livro.co
     AutorComponent,
     FormularioAutorComponent,
     FormularioLivroComponent,
-    // FormularioRetiradaComponent
+    FormularioRetiradaComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +42,7 @@ import { FormularioLivroComponent } from './formulario-livro/formulario-livro.co
     UsuarioService,
     AutorService,
     LivroService,
-    // RetiradaService
+    RetiradaService
   ],
   bootstrap: [AppComponent]
 })

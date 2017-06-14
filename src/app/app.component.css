@@ -1,20 +1,24 @@
 /*@import "../node_modules/materialize-css/dist/css/materialize.css";*/
 .row {
-    /*border: coral solid 1px;*/
+    /*border: red solid 1px;*/
 }
 
 .col-sm-2 {
     /*border: black solid 1px;*/
-    background: white;
+    /*background: gray;*/
 }
 
 .col-sm-10 {
-    /*border: aqua solid 2px;*/
-    background: white;
+    /*border: aqua solid 1px;*/
+    /*background: greenyellow;*/
 }
 
 .container-fluid {
-    /*border: yellowgreen solid 2px;*/
+    /*border: rebeccapurple solid 1px;*/
+}
+
+.navbar-header {
+    background-color: #26a69a;
 }
 
 .btn {
@@ -30,6 +34,23 @@
     cursor: pointer;
 	border-radius:10px;
 }
+  
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:4px 9px;
+    font-size:90%;
+    line-height: 1.2;
+  }
+}
 
 body {
     display: flex;
@@ -43,4 +64,7 @@ main {
 
 .page-footer {
     background-color: #26a69a; 
+    padding-top: 0px;
+    /*border: darkblue solid 1px;*/
 }
+

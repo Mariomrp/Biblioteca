@@ -1,0 +1,30 @@
+<h4>
+  Tabela Livros!
+</h4>
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th>ISBN</th>
+      <th>Título do Livro</th>
+      <th>Autor</th>
+      <th>Editora</th>
+      <th>Ano Publicação</th>
+      <th>Editar</th>
+      <th>Remover</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let livro of livros;let i=index'>
+      <td>{{livro.isbn}}</td>
+      <td>{{livro.nome}}</td>
+      <td>{{livro.autor}}</td>
+      <td>{{livro.editora}}</td>
+      <td>{{livro.anopublicacao}}</td>
+      <td><a [routerLink]="['/edicaolivro',i]">Editar</a></td>
+      <td><a routerLink="/lista" (click)="removerLivro(i)">Remover</a></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<a routerLink="/novolivro" class="btn waves-effect waves-light">Novo Livro</a>

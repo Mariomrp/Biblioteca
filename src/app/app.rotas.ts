@@ -11,7 +11,7 @@ import { FormularioLivroComponent } from './formulario-livro/formulario-livro.co
 import { AutorComponent } from './autor/autor.component';
 import { FormularioAutorComponent } from './formulario-autor/formulario-autor.component';
 
-// import { FormularioRetiradaComponent } from "app/formulario-retirada/formulario-retirada.component";
+import { FormularioRetiradaComponent } from "app/formulario-retirada/formulario-retirada.component";
 
 const APP_ROUTES: Routes = [
     // // exemplo de rotas usando children
@@ -22,23 +22,23 @@ const APP_ROUTES: Routes = [
     //          {  path: 'edicao/:ind', component: FormularioUsuariosComponent }
     //      ]
     //  },
-   ///////////
-   
+    ///////////
+
     //path usuarios
-    {path: 'usuarios', component: TabelaUsuariosComponent },
-    {path: 'novousuario', component: FormularioUsuariosComponent },
-    {path: 'edicaousuario/:ind', component: FormularioUsuariosComponent },
+    { path: 'usuarios', component: TabelaUsuariosComponent },
+    { path: 'novousuario', component: FormularioUsuariosComponent },
+    { path: 'edicaousuario/:ind', component: FormularioUsuariosComponent },
     //path livros
-    {path: 'livros', component: LivrosComponent },
-    {path: 'novolivro', component: FormularioLivroComponent },
-    {path: 'edicaolivro/:ind', component: FormularioLivroComponent },
+    { path: 'livros', component: LivrosComponent },
+    { path: 'novolivro', component: FormularioLivroComponent },
+    { path: 'edicaolivro/:ind', component: FormularioLivroComponent },
     //path autor
-    {path: 'autor', component: AutorComponent },
-    {path: 'novoautor', component: FormularioAutorComponent },
-    {path: 'edicaoautor/:ind', component: FormularioAutorComponent },
+    { path: 'autor', component: AutorComponent },
+    { path: 'novoautor', component: FormularioAutorComponent },
+    { path: 'edicaoautor/:ind', component: FormularioAutorComponent },
     //path retirada
-    // { path: 'retirada', component: FormularioRetiradaComponent },
-    
+    { path: 'retirada', component: FormularioRetiradaComponent },
+
 ];
 
 export const rotas: ModuleWithProviders = RouterModule.forRoot(APP_ROUTES);
