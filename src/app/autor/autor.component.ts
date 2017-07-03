@@ -5,7 +5,7 @@ import { AutorService } from "app/autor.service";
 @Component({
   selector: 'app-autor',
   templateUrl: './autor.component.html',
-  styleUrls: ['./autor.component.css']
+  styleUrls: ['../css/html.component.css']
 })
 export class AutorComponent implements OnInit {
   autores: Autor[];

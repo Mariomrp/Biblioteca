@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 // import { MaterializeModule } from 'angular2-materialize';
-import { TabelaUsuariosComponent } from './tabela-usuarios/tabela-usuarios.component';
 import { FormularioUsuariosComponent } from './formulario-usuarios/formulario-usuarios.component';
 import { UsuarioService } from './usuario.service';
 import { rotas } from "app/app.rotas";
@@ -18,11 +17,12 @@ import { FormularioAutorComponent } from './formulario-autor/formulario-autor.co
 import { FormularioLivroComponent } from './formulario-livro/formulario-livro.component';
 import { FormularioRetiradaComponent } from './formulario-retirada/formulario-retirada.component';
 import { RetiradaService } from "app/retirada.service";
+import { UsuariosComponent } from "app/usuarios/usuarios.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    TabelaUsuariosComponent,
+    UsuariosComponent,
     FormularioUsuariosComponent,
     LivrosComponent,
     AutorComponent,

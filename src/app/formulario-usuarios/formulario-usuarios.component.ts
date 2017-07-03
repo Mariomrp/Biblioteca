@@ -6,7 +6,7 @@ import { Router, ActivatedRoute } from "@angular/router";
 @Component({
   selector: 'app-formulario-usuarios',
   templateUrl: './formulario-usuarios.component.html',
-  styleUrls: ['./formulario-usuarios.component.css']
+  styleUrls: ['../css/formulario.component.css']
 })
 
 export class FormularioUsuariosComponent implements OnInit {

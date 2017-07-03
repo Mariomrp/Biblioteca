@@ -15,23 +15,33 @@
     <tr>
       <td>
         <div class="form-group">
-          <select class="form-control" id="sel1" *ngFor='let usuario of usuarios;let i=index'>
-              <option>{{usuario.nome}}</option>
-              <!--<option>Cliente 2</option>
+          <select class="form-control" id="cliente">
+              <option>Cliente 1</option>
+              <option>Cliente 2</option>
               <option>Cliente 3</option>
-              <option>Cliente 4</option>-->
+              <option>Cliente 4</option>
             </select>
         </div>
       </td>
       <td>
         <div class="form-group">
-          <select class="form-control" id="sel1" *ngFor='let livro of livros;let i=index'>
-              <option *ngFor='let livro of livros;let i=index'></option>
-              <!--<option>Livro 2</option>
+          <select class="form-control" id="livro">
+              <option>Livro 1</option>
+              <option>Livro 2</option>
               <option>Livro 3</option>
-              <option>Livro 4</option>-->
+              <option>Livro 4</option>
             </select>
         </div>
+        <!--<div class="btn-group" dropdown>
+          <button dropdownToggle type="button" class="btn waves-effect waves-light dropdown-toggle">
+            Livro<span class="caret"></span>
+          </button>
+          <ul *dropdownMenu class="dropdown-menu" role="menu">
+            <li role="menuitem"><a class="dropdown-item" href="#">Livro 1</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Livro 2</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Livro 3</a></li>
+          </ul>
+        </div>-->
       </td>
       <td><input type="date" class="datepicker"></td>
       <td><input type="date" class="datepicker"></td>
@@ -39,5 +49,7 @@
   </tbody>
 </table>
 <br>
+<!--<div class="btn-group">-->
 <a class="btn waves-effect col s6" (click)="salvar()">Confirma Retirada</a>
 <a class="btn waves-effect col s6" (click)="cancelar()">Cancela Retirada</a>
+<!--</div>-->

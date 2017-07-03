@@ -5,7 +5,7 @@ import { LivroService } from 'app/livro.service';
 @Component({
   selector: 'app-livros',
   templateUrl: './livros.component.html',
-  styleUrls: ['./livros.component.css']
+  styleUrls: ['../css/html.component.css']
 })
 export class LivrosComponent implements OnInit {
   livros: Livro[];
