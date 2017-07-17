@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/I:/Senac/ProgIntII/_Trabalho02/CrudBiblioteca/src/java/ws/autorWS.java</file>
+            <file>file:/I:/Senac/ProgIntII/_Trabalho02/CrudBiblioteca/src/java/dao/LivroDao.java</file>
+            <file>file:/I:/Senac/ProgIntII/_Trabalho02/CrudBiblioteca/src/java/model/Livro.java</file>
+            <file>file:/I:/Senac/ProgIntII/_Trabalho02/CrudBiblioteca/src/java/dao/AutorDaoBd.java</file>
+            <file>file:/I:/Senac/ProgIntII/_Trabalho02/CrudBiblioteca/src/java/negocio/LivroNegocio.java</file>
+            <file>file:/I:/Senac/ProgIntII/_Trabalho02/CrudBiblioteca/src/java/negocio/AutorNegocio.java</file>
+            <file>file:/I:/Senac/ProgIntII/_Trabalho02/CrudBiblioteca/src/java/ws/LivroWS.java</file>
+            <file>file:/I:/Senac/ProgIntII/_Trabalho02/CrudBiblioteca/src/java/dao/LivroDaoBd.java</file>
+        </group>
+    </open-files>
+</project-private>
